@@ -15,24 +15,41 @@
 
     header {
       background-color: #1c1c1c;
-  color: white;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+      color: white;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     header h1 {
-       font-size: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    nav a,
+    nav a:link,
+    nav a:visited {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #1c1c1c;
     }
 
     .section {
-      padding: 2rem;
+      padding: 6rem 2rem 2rem; /* top padding to make room for fixed header */
       max-width: 900px;
       margin: auto;
     }
@@ -53,43 +70,19 @@
       color: #0077cc;
       text-decoration: none;
     }
-
-    nav {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    nav a,
-nav a:link,
-nav a:visited {
-  margin-left: 1.5rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-nav a:hover {
-  background-color: white;
-  color: #1c1c1c;
-}
-
-
   </style>
 </head>
 <body>
   <header>
-  <h1>GodoTech</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="teach.html">Teaching</a>
-    <a href="blog.html">GodoReads</a>
-    <a href="about.html">About</a>
-  </nav>
-</header>
+    <h1>GodoTech</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="teach.html">Teaching</a>
+      <a href="blog.html">GodoReads</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
   <section class="section">
     <div class="project">
