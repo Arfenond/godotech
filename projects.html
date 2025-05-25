@@ -15,14 +15,20 @@
 
     header {
       background-color: #1c1c1c;
-      color: white;
-      text-align: center;
-      padding: 2rem;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+       font-size: 1.5rem;
     }
 
     .section {
@@ -53,25 +59,37 @@
       margin: 2rem 0;
     }
 
-    nav a {
-      margin: 0 1rem;
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    nav a,
+nav a:link,
+nav a:visited {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #1c1c1c;
+}
+
+
   </style>
 </head>
 <body>
   <header>
-    <h1>My Projects</h1>
-  </header>
-
+  <h1>GodoTech</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
+    <a href="teach.html">Teaching</a>
+    <a href="blog.html">GodoReads</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
   </nav>
+</header>
 
   <section class="section">
     <div class="project">
