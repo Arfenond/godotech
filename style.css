@@ -1,0 +1,71 @@
+/* style.css */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #1c1c1c;
+}
+
+header {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.section {
+  padding: 5rem 2rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #1c1c1c;
+}
